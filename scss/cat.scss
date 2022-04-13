@@ -1,0 +1,52 @@
+.cat,
+#cat1,
+#cat2,
+#cat3 {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+@mixin flexCenter($direction) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: $direction;
+}
+
+.family {
+    width: 100%;
+    min-height: 100%;
+    background-color: transparent;
+    box-shadow: inset 0px 2px 10px black;
+    margin: {
+        left: auto;
+        right: auto;
+        top: 0;
+    }
+    p {
+        font-weight: bold;
+    }
+    .mother {
+        width: 100%;
+        p {
+            font-size: 1.3rem;
+        }
+    }
+    .kittens {
+        @include flexCenter(row);
+        flex-wrap: wrap;
+        background-color: transparent;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        .kitten {
+            padding: 0;
+            width: 23%;
+            border-radius: 20px;
+            margin: 1%;
+        }
+    }
+}

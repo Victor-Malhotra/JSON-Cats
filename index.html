@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/carousel.css" />
+    <link rel="stylesheet" href="css/cat.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title"></h1>
+        <h3 id="subTitle"></h3>
+    </header>
+    <section class="carousel" aria-label="Gallery">
+        <ol class="carousel__viewport">
+            <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+                <div class="carousel__snapper">
+                    <div id="cat0" class="cat" style="width: 100%; text-align: center;">
+
+                    </div>
+                    <a href="#carousel__slide3" class="carousel__prev">Go to last slide</a
+          >
+          <a href="#carousel__slide2" class="carousel__next"
+            >Go to next slide</a
+          >
+        </li>
+        <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+          <div class="carousel__snapper">
+            <div class="cat" id="cat1" style="width: 100%; text-align: center;">
+                        
+                    </div>
+                  </div>
+          <a href="#carousel__slide1" class="carousel__prev"
+            >Go to previous slide</a
+          >
+          <a href="#carousel__slide3" class="carousel__next"
+            >Go to next slide</a
+          >
+        </li>
+        <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+          <div class="carousel__snapper">
+              <div class="cat" id="cat2" style="width: 100%; text-align: center;">
+                        
+                </div>
+          <a href="#carousel__slide2" class="carousel__prev"
+            >Go to previous slide</a
+          >
+          <a href="#carousel__slide1" class="carousel__next"
+            >Go to next slide</a
+          >
+        </li>
+      </ol>
+      <aside class="carousel__navigation">
+        <ol class="carousel__navigation-list">
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide1" class="carousel__navigation-button"
+              >Go to slide 1</a
+            >
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide2" class="carousel__navigation-button"
+              >Go to slide 2</a
+            >
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide3" class="carousel__navigation-button"
+              >Go to slide 3</a
+            >
+          </li>
+        </ol>
+      </aside>
+    </section>
+    <script src="js/cats.js"></script>
+  </body>
+</html>
